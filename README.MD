@@ -20,12 +20,15 @@ Running:
 ```sh
 $ docker run -it -p 8080:8080  demo_app
 ``` 
-> About arguments: `-i` means `--interactive` keep stdin open even if not attached.
->  `-t` allocate a pseudo-tty, those arguments will allow you interact with the 
-> container as a simple app on your machine, without them you will couldn't pass values to create a superuser as requested at the last line of `dockerfile`.
-> Finelly the argument `-p` publish a port from container to one port on the machine running the container.   
+ About arguments: 
+  - `-i` means `--interactive` keep stdin open even if not attached.
+  - `-t` allocate a pseudo-tty, 
+  - `-p` public a port from container to one port on the machine running the container.
 
-Acess your:
+> Those arguments will allow you interact with the 
+> container as a simple app on your machine, as a exemple without them you will couldn't pass values to create a superuser as requested at the last line of `dockerfile`.
+
+
+Finally Acess your:
 
 [localhost] - localhost:8080
-
